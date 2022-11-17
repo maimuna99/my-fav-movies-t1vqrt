@@ -23,7 +23,6 @@ bonus level: Apply your CSS magic and designer's touch to make the app look grea
 
 import { ref } from 'vue';
 import movies from './assets/movies.json';
-
 const favoriteMovie = ref('');
 const watchedList = ref([]);
 </script>
@@ -35,9 +34,10 @@ const watchedList = ref([]);
 
     <div class="card">
       
-      <img :src=movie.picture alt="Avatar" style="width:100%">
+      <img class='cardimg' :src=movie.picture alt="Avatar" style="width:100%">
       <div class="container">
-      <h4><b>Movie Title : {{movie.title}}</b></h4> 
+      <h4><b>Movie Title : {{movie.title}}</b>
+      <span class="emoji" v-if="favoriteMovie === movie.title">😍</span></h4> 
       <p>Movie Score :  {{movie.score}}</p> 
   </div>
 </div>
@@ -49,12 +49,12 @@ const watchedList = ref([]);
   <hr />
   <h3>Controls</h3>
   <div>
-    <span>1 - My fav movie: {{ favoriteMovie || 'none chosen yet :(' }}</span>
+    <span>1 - My fav movie: {{ favoriteMovie || "no favorite movie selected"  }}</span>
     <br />
     <br />
     <select v-model="favoriteMovie">
       <option disabled value="">Please select a favorite!</option>
-      <option v-for="movie in movies">
+      <option v-for="movie in movies" :value="movie.title"> 
         {{ movie.title }}
       </option>
     </select>
@@ -95,7 +95,7 @@ const watchedList = ref([]);
 .card {
   box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
   transition: 0.3s;
-  width: 40%;
+  width: 18rem;
 }
 
 .card:hover {
@@ -103,6 +103,10 @@ const watchedList = ref([]);
 }
 
 .container {
-  padding: 2px 16px;
+  padding: 1px 16px;
+}
+
+.cardimg{
+   height:13rem;
 }
 </style>
