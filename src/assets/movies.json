@@ -1,0 +1,27 @@
+[
+  {
+    "id": "dune2021",
+    "title": "Dune",
+    "score": "80",
+    "picture": "pic_trulli.jpg"
+    
+  },
+  {
+    "id": "eeaao2022",
+    "title": "Everything Everywhere All at Once",
+    "score": "99",
+    "picture": "img_girl.jpg"
+  },
+  {
+    "id": "topgun2022",
+    "title": "Top Gun: Maverick",
+    "score": "75",
+    "picture": "https://s3.amazonaws.com/static.rogerebert.com/uploads/movie/movie_poster/fall-2022/large_fall-movie-poster-2022.jpeg"
+  },
+  {
+    "id": "nope2022",
+    "title": "Nope",
+    "score": "50",
+    "picture": "https://en.wikipedia.org/wiki/File:Nope_(film)_poster.jpg#/media/File:Nope_(film)_poster.jpg"
+  }
+]
