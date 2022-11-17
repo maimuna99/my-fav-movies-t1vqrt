@@ -34,16 +34,15 @@ const watchedList = ref([]);
     <ul  v-for="movie in movies">
 
     <div class="card">
-      <img src="{{movie.picture}}" alt="Avatar" style="width:100%">
+      
+      <img :src=movie.picture alt="Avatar" style="width:100%">
       <div class="container">
       <h4><b>Movie Title : {{movie.title}}</b></h4> 
       <p>Movie Score :  {{movie.score}}</p> 
   </div>
 </div>
 
-      <li>
-         {{movie}} 
-      </li>
+      
     </ul>
   </div>
 

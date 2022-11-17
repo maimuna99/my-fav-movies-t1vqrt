@@ -3,25 +3,25 @@
     "id": "dune2021",
     "title": "Dune",
     "score": "80",
-    "picture": "pic_trulli.jpg"
+    "picture": "https://images.unsplash.com/photo-1542401886-65d6c61db217?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1770&q=80"
     
   },
   {
     "id": "eeaao2022",
     "title": "Everything Everywhere All at Once",
     "score": "99",
-    "picture": "img_girl.jpg"
+    "picture": "https://images.unsplash.com/photo-1661532732965-a0db2403c6ab?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"
   },
   {
     "id": "topgun2022",
     "title": "Top Gun: Maverick",
     "score": "75",
-    "picture": "https://s3.amazonaws.com/static.rogerebert.com/uploads/movie/movie_poster/fall-2022/large_fall-movie-poster-2022.jpeg"
+    "picture": "https://images.unsplash.com/photo-1622744322006-d043fa76b4b6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
   },
   {
     "id": "nope2022",
     "title": "Nope",
     "score": "50",
-    "picture": "https://en.wikipedia.org/wiki/File:Nope_(film)_poster.jpg#/media/File:Nope_(film)_poster.jpg"
+    "picture": "https://images.unsplash.com/photo-1596057176846-4dfa9a53c9ba?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1780&q=80"
   }
 ]
