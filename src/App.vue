@@ -27,14 +27,14 @@ const favoriteMovie = ref('');
 const watchedList = ref([]);
 const rate =ref([]);
 
-function starRating(score) {
-  <span v-if="score >= 90">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐ ⭐))</span>
-  <span v-else-if="score >= 80">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐))</span>
-   <span v-else-if="score >= 60">rate.value.push(Object.assign({},⭐ ⭐ ⭐))</span>
-    <span v-else-if="score >= 40">rate.value.push(Object.assign({}, ⭐ ⭐ ))</span>
-    <span v-else>rate.value.push(Object.assign({},⭐))</span>
+// function starRating(score) {
+//   <span v-if="score >= 90">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐ ⭐))</span>
+//   <span v-else-if="score >= 80">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐))</span>
+//    <span v-else-if="score >= 60">rate.value.push(Object.assign({},⭐ ⭐ ⭐))</span>
+//     <span v-else-if="score >= 40">rate.value.push(Object.assign({}, ⭐ ⭐ ))</span>
+//     <span v-else>rate.value.push(Object.assign({},⭐))</span>
   
-}
+// }
 </script>
 
 <template>
@@ -51,6 +51,11 @@ function starRating(score) {
       <p>Movie Score :  {{movie.score}}</p> 
       <input type="checkbox" id="checkbox" v-model="checked" />
 <label for="checkbox" watchedList.value.push(movie.title)>Watched</label>
+<span v-if="score >= 90">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐ ⭐))</span>
+  <span v-else-if="score >= 80">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐))</span>
+   <span v-else-if="score >= 60">rate.value.push(Object.assign({},⭐ ⭐ ⭐))</span>
+    <span v-else-if="score >= 40">rate.value.push(Object.assign({}, ⭐ ⭐ ))</span>
+    <span v-else>rate.value.push(Object.assign({},⭐))</span>
 <h3> {{rate}}</h3>
   </div>
   
