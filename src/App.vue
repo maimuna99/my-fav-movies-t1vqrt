@@ -39,6 +39,8 @@ const watchedList = ref([]);
       <h4><b>Movie Title : {{movie.title}}</b>
       <span class="emoji" v-if="favoriteMovie === movie.title">😍</span></h4> 
       <p>Movie Score :  {{movie.score}}</p> 
+      <input type="checkbox" id="checkbox" v-model="checked" />
+<label for="checkbox">Watched</label>
   </div>
 </div>
 
