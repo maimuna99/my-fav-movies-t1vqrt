@@ -15,6 +15,7 @@ level 4: I want it to be easy to see which one is my current favorite, so please
 level 5: The score of each film is represented by a string with a value between "0" and "100". We can do better! Let's show between 1 to 5 stars in each film card, according to the score (tip: use a v-for loop here).
 
  
+*/
 
 import { ref } from 'vue';
 import movies from './assets/movies.json';
