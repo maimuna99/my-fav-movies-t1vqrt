@@ -49,14 +49,14 @@ const rate =ref([]);
       <h4><b>Movie Title : {{movie.title}}</b>
       <span class="emoji" v-if="favoriteMovie === movie.title">😍</span></h4> 
       <p>Movie Score :  {{movie.score}}</p> 
-      <input type="checkbox" id="checkbox" v-model="checked" />
-<label for="checkbox" watchedList.value.push(movie.title)>Watched</label>
-<span v-if="score >= 90">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐ ⭐))</span>
-  <span v-else-if="score >= 80">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐))</span>
-   <span v-else-if="score >= 60">rate.value.push(Object.assign({},⭐ ⭐ ⭐))</span>
-    <span v-else-if="score >= 40">rate.value.push(Object.assign({}, ⭐ ⭐ ))</span>
-    <span v-else>rate.value.push(Object.assign({},⭐))</span>
-<h3> {{rate}}</h3>
+      <input type="checkbox" id="checkbox" v-model="checked" /><br/>
+<!-- <label for="checkbox" watchedList.value.push(movie.title)>Watched</label> -->
+<span v-if="score >= 90">⭐ ⭐ ⭐ ⭐ ⭐</span>
+  <span v-else-if="score >= 80">⭐ ⭐ ⭐ ⭐</span>
+   <span v-else-if="score >= 60">⭐ ⭐ ⭐</span>
+    <span v-else-if="score.value >= 40">⭐ ⭐</span>
+    <span v-else>⭐</span>
+<!-- <h3> {{rate}}</h3> -->
   </div>
   
 </div>
