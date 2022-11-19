@@ -14,12 +14,7 @@ level 4: I want it to be easy to see which one is my current favorite, so please
 
 level 5: The score of each film is represented by a string with a value between "0" and "100". We can do better! Let's show between 1 to 5 stars in each film card, according to the score (tip: use a v-for loop here).
 
-level 6: Fix the multiselectors 2, 3 of the movies I've watched this year. Remove the duplicated & hardcoded code in the form binding for both multi selectors, and use v-for loops and attribute bindings to correctly build the options. Keep in mind they should be synchronized! (keep using the same binding to the variable "watchedList" for both fields).
-
-level 7: The multiselectors are nice, but it would be great to also have a checkbox on each film card to mark it as watched/not watched. Of course, it should be synchronized with the "watchedList" array!
-
-bonus level: Apply your CSS magic and designer's touch to make the app look great!
-*/
+ 
 
 import { ref } from 'vue';
 import movies from './assets/movies.json';
@@ -27,14 +22,6 @@ const favoriteMovie = ref('');
 const watchedList = ref([]);
 const rate =ref([]);
 
-// function starRating(score) {
-//   <span v-if="score >= 90">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐ ⭐))</span>
-//   <span v-else-if="score >= 80">rate.value.push(Object.assign({}, ⭐ ⭐ ⭐ ⭐))</span>
-//    <span v-else-if="score >= 60">rate.value.push(Object.assign({},⭐ ⭐ ⭐))</span>
-//     <span v-else-if="score >= 40">rate.value.push(Object.assign({}, ⭐ ⭐ ))</span>
-//     <span v-else>rate.value.push(Object.assign({},⭐))</span>
-  
-// }
 </script>
 
 <template>
@@ -51,12 +38,12 @@ const rate =ref([]);
       <p>Movie Score :  {{movie.score}}</p> 
       <input type="checkbox" id="checkbox" v-model="checked" /> Watched<br/>
 <!-- <label for="checkbox" watchedList.value.push(movie.title)>Watched</label> -->
-<span v-if="score >= 90">⭐ ⭐ ⭐ ⭐ ⭐</span>
-  <span v-else-if="score >= 80">⭐ ⭐ ⭐ ⭐</span>
-   <span v-else-if="score >= 60">⭐ ⭐ ⭐</span>
-    <span v-else-if="score >= 40">⭐ ⭐</span>
+<span v-if="movie.score >= 90">⭐ ⭐ ⭐ ⭐ ⭐</span>
+  <span v-else-if="movie.score >= 80">⭐ ⭐ ⭐ ⭐</span>
+   <span v-else-if="movie.score >= 60">⭐ ⭐ ⭐</span>
+    <span v-else-if="movie.score >= 40">⭐ ⭐</span>
     <span v-else>⭐</span>
-  </div>
+  </div><br/>
   
 </div>
 
