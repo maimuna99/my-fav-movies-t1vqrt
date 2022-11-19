@@ -56,7 +56,7 @@ const rate =ref([]);
    <span v-else-if="score >= 60">⭐ ⭐ ⭐</span>
     <span v-else-if="score.value >= 40">⭐ ⭐</span>
     <span v-else>⭐</span>
-<!-- <h3> {{rate}}</h3> -->
+<h3> {{rate}}</h3>
   </div>
   
 </div>
