@@ -25,6 +25,8 @@ const rate =ref([]);
 
 </script>
 
+
+
 <template>
   <h3>Movie list</h3>
   <div>
@@ -80,21 +82,7 @@ const rate =ref([]);
   </div>
 
   <hr />
-  <div>
-    <span>3 - Movies watched this year: {{ watchedList }}</span>
-    <br />
-    <br />
-
-    <input type="checkbox" id="option1" value="Dune" v-model="watchedList" />
-    <label for="option1">Dune</label>
-    <br />
-
-    <input type="checkbox" id="option2" value="?" v-model="watchedList" />
-    <label for="option2">Everything, Everywhere, all at once</label>
-    <br />
-    <input type="checkbox" id="option3" value="?" v-model="watchedList" />
-    <label for="option3">Top Gun: Maverick</label>
-  </div>
+  
 </template>
 
 <style scoped>
@@ -114,5 +102,10 @@ const rate =ref([]);
 
 .cardimg{
    height:13rem;
+}
+
+.sideview{
+  width :13rem;
+  background-color: coral;
 }
 </style>
